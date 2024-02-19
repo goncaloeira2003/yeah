@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gonca"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-03 11:54:46 "/>
+        <attribute name="created" value="Z29uY2E7TEFQVE9QLTlDUlVOU0I1OzIwMjItMTEtMDM7IjExOjM1OjQzICI7Mjc4Mw=="/>
+        <attribute name="edited" value="Z29uY2E7TEFQVE9QLTlDUlVOU0I1OzIwMjItMTEtMDM7IjExOjU0OjQ2ICI7MjsyODk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Escreva 2 numeros diferentes&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a&lt;b">
+                <then>
+                    <for variable="i" start="a" end="b" direction="inc" step="1">
+                        <output expression="&quot;&quot;&amp;i" newline="True"/>
+                    </for>
+                </then>
+                <else>
+                    <for variable="i" start="a" end="b" direction="dec" step="1">
+                        <output expression="&quot;&quot;&amp;i" newline="True"/>
+                    </for>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

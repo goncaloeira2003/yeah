@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gonca"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-07 06:39:46 "/>
+        <attribute name="created" value="Z29uY2E7TEFQVE9QLTlDUlVOU0I1OzIwMjItMTEtMDc7IjA2OjIwOjA4ICI7Mjc4Ng=="/>
+        <attribute name="edited" value="Z29uY2E7TEFQVE9QLTlDUlVOU0I1OzIwMjItMTEtMDc7IjA2OjM5OjQ2ICI7MTsyOTA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, x, a, contador" type="Integer" array="False" size=""/>
+            <output expression="&quot;Indique o valor maximo de n&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="n&lt;=0">
+                <output expression="&quot;O valor de n tem que ser maior que 0&quot;" newline="True"/>
+                <output expression="&quot;Indique o valor maximo de n&quot;" newline="True"/>
+                <input variable="n"/>
+            </while>
+            <output expression="&quot;Acertar um numero entre 1 e &quot;&amp;n&amp;&quot;&quot;" newline="True"/>
+            <assign variable="x" expression="Random(n) + 1"/>
+            <assign variable="contador" expression="0"/>
+            <assign variable="a" expression="99"/>
+            <while expression="a!=x">
+                <output expression="&quot;Introduza um valor para:&quot;" newline="True"/>
+                <input variable="a"/>
+                <assign variable="contador" expression="contador + 1"/>
+            </while>
+            <output expression="&quot;Acertou o valor &quot;&amp;a&amp;&quot; ao fim de &quot;&amp;contador&amp;&quot; tentativas&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

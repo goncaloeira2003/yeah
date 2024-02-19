@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gonca"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-03 12:20:32 "/>
+        <attribute name="created" value="Z29uY2E7TEFQVE9QLTlDUlVOU0I1OzIwMjItMTEtMDM7IjExOjU3OjUwICI7Mjc4NQ=="/>
+        <attribute name="edited" value="Z29uY2E7TEFQVE9QLTlDUlVOU0I1OzIwMjItMTEtMDM7IjEyOjIwOjMyICI7MTsyODg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, soma" type="Integer" array="False" size=""/>
+            <assign variable="soma" expression="0"/>
+            <output expression="&quot;Escreva quantos numeros quiser, se desejar parar digite 0&quot;" newline="True"/>
+            <do expression="n&gt;0">
+                <input variable="n"/>
+                <assign variable="soma" expression="soma + n"/>
+            </do>
+            <output expression="&quot;Soma dos numeros:&quot; &amp;soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

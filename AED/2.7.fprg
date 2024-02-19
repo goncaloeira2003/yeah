@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gonca"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-07 07:09:39 "/>
+        <attribute name="created" value="Z29uY2E7TEFQVE9QLTlDUlVOU0I1OzIwMjItMTEtMDc7IjA2OjUyOjU5ICI7Mjc5Nw=="/>
+        <attribute name="edited" value="Z29uY2E7TEFQVE9QLTlDUlVOU0I1OzIwMjItMTEtMDc7IjA3OjA5OjM5ICI7MTsyOTA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, maior, menor" type="Integer" array="False" size=""/>
+            <assign variable="maior" expression="0"/>
+            <assign variable="menor" expression="0"/>
+            <output expression="&quot;Insira valores consecutivos, se desejar parar digite 0&quot;" newline="True"/>
+            <input variable="n"/>
+            <while expression="n!=0">
+                <if expression="n&gt;maior">
+                    <then>
+                        <assign variable="maior" expression="n"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="n &lt; menor &amp;&amp; n!=0">
+                    <then>
+                        <assign variable="menor" expression="n"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="&quot;Insira valores consecutivos, se desejar parar digite 0&quot;" newline="True"/>
+                <input variable="n"/>
+            </while>
+            <output expression="&quot;O maior &#233;: &quot;&amp;maior&amp;&quot;, o menor &#233;: &quot;&amp;menor&amp;&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
